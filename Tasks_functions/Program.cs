@@ -219,3 +219,16 @@ number = double.Parse(Console.ReadLine()?? "0");
 Console.WriteLine("Введите степень: ");
 int num = int.Parse(Console.ReadLine()?? "0");
 Console.WriteLine($"Возвдение числа {number} в степень {num}: {Pow(number, num)}");
+
+
+Console.WriteLine("Введите число для получения факториала: ");
+num = int.Parse(Console.ReadLine()?? "0");
+Console.WriteLine($"Факториал числа {num}: {Factorial(num)}");
+
+Console.WriteLine("Введите число для получения суммы его цифр: ");
+num = int.Parse(Console.ReadLine()?? "0");
+Console.WriteLine($"Сумма цифр числа {num}: {SumOfDigits(num)}");
+
+Console.WriteLine("Введите число для проверки на полиндромность: ");
+num = int.Parse(Console.ReadLine()?? "0");
+Console.WriteLine($"Является ли число {num} полиндромом: {IsPolindrom(num)}");
