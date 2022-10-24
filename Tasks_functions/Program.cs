@@ -144,7 +144,6 @@ bool IsSorted(double[] array)
 //II. Реализовать следующие функции:
 
 //Функцию, которая вычисляет число a в степени 
-
 double Pow(double number, int power)
 {
     double res = 1.0;
@@ -182,7 +181,6 @@ bool IsPolindrom(int number)
 }
 
 //Функцию, складывающую два целых числа.
-
 int SumOfTwo(int first, int second)
 {
     return first + second;
@@ -237,34 +235,34 @@ Console.WriteLine($"Проверка является ли массив отсо
 
 
 Console.WriteLine("Введите число для возведения в степень: ");
-number = double.Parse(Console.ReadLine()?? "0");
+number = double.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine("Введите степень: ");
-int num = int.Parse(Console.ReadLine()?? "0");
+int num = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Возвдение числа {number} в степень {num}: {Pow(number, num)}");
 
 
 Console.WriteLine("Введите число для получения факториала: ");
-num = int.Parse(Console.ReadLine()?? "0");
+num = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Факториал числа {num}: {Factorial(num)}");
 
 Console.WriteLine("Введите число для получения суммы его цифр: ");
-num = int.Parse(Console.ReadLine()?? "0");
+num = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Сумма цифр числа {num}: {SumOfDigits(num)}");
 
 Console.WriteLine("Введите число для проверки на полиндромность: ");
-num = int.Parse(Console.ReadLine()?? "0");
+num = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Является ли число {num} полиндромом: {IsPolindrom(num)}");
 
 Console.WriteLine("Введите первое число для сложения: ");
-num = int.Parse(Console.ReadLine()?? "0");
+num = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine("Введите второе число для сложения: ");
-int sec = int.Parse(Console.ReadLine()?? "0");
+int sec = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Сумма чисел {num} и {sec}: {SumOfTwo(num, sec)}");
 
 Console.WriteLine("Введите число для проверки на простоту: ");
-num = int.Parse(Console.ReadLine()?? "0");
+num = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Является ли число {num} простым: {IsSimple(num)}");
 
 Console.WriteLine("Введите число для проверки на четность: ");
-num = int.Parse(Console.ReadLine()?? "0");
+num = int.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Является ли число {num} четным: {IsEven(num)}");
