@@ -58,11 +58,31 @@ int Find(double[] array, double number)
     return res;
 }
 
+
+//Проверка наличия элемента в массиве
+
+bool Contains(double[] array, double number)
+{
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] == number)
+            return true;
+    return false;
+}
+void Print(double[] array)
+{
+    foreach (double num in array)
+        Console.Write(num + "\t");
+    Console.WriteLine();
+}
+
+
+
+
 //III. Вызвать и проверить работу всех вышеуказанных фукнций:
 
 
 Console.WriteLine("Сгенерированный массив: ");
-
+Print(array);
 Console.WriteLine($"Минимум: {Min(array)}");
 Console.WriteLine($"Максимум: {Max(array)}");
 Console.WriteLine($"Поиск суммы элементов массива: {Sum(array)}");
@@ -70,4 +90,8 @@ Console.WriteLine($"Поиск произведения элементов ма�
 Console.WriteLine("Введите число для поиска в массиве: ");
 double number = double.Parse(Console.ReadLine()?? "0");
 Console.WriteLine($"Поиск индекса заданного элемента в массиве: {Find(array, number)}");
+
+Console.WriteLine("Введите число для проверки на наличие в массиве: ");
+number = double.Parse(Console.ReadLine()?? "0");
+Console.WriteLine($"Проверка наличия элемента в массиве: {Contains(array, number)}");
 
