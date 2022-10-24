@@ -75,7 +75,29 @@ void Print(double[] array)
     Console.WriteLine();
 }
 
-
+//Среднее арифметическое элеметов массива
+double Average(double[] array)
+{
+    return Sum(array) / array.Length;
+}
+//Подсчёт количества отрицательных элементов массива.
+int NegativeCount(double[] array)
+{
+    int res = 0;
+    foreach (double num in array)
+        if (num < 0)
+            res++;
+    return res;
+}
+//Подсчёт количества положительных элементов в массиве.
+int PositiveCount(double[] array)
+{
+    int res = 0;
+    foreach (double num in array)
+        if (num >= 0)
+            res++;
+    return res;
+}
 
 
 //III. Вызвать и проверить работу всех вышеуказанных фукнций:
@@ -95,3 +117,8 @@ Console.WriteLine("Введите число для проверки на нал
 number = double.Parse(Console.ReadLine()?? "0");
 Console.WriteLine($"Проверка наличия элемента в массиве: {Contains(array, number)}");
 
+Console.WriteLine($"Среднее арифметическое элеметов массива: {Average(array)}");
+
+Console.WriteLine($"Подсчёт количества отрицательных элементов массива: {NegativeCount(array)}");
+
+Console.WriteLine($"Подсчёт количества положительных элементов в массиве: {PositiveCount(array)}");
