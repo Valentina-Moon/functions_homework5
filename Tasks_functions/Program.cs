@@ -1,9 +1,8 @@
 ﻿//I. Реализовать следующие функции для работы с массивами:
 
 //Печать массива на экран
-
 Console.WriteLine("Введите длину массива: ");
-int lengh = int.Parse(Console.ReadLine());
+int lengh = int.Parse(Console.ReadLine() ?? "0");
 double[] array = new double[lengh];
 Random random = new Random();
 for (int i = 0; i < lengh; i++)
@@ -45,7 +44,6 @@ double Prod(double[] array)
     return res;
 }
 //Поиск индекса заданного элемента в массиве, если такого элемента в массиве нет то возвращать -1
-
 int Find(double[] array, double number)
 {
     int res = -1;
@@ -60,7 +58,6 @@ int Find(double[] array, double number)
 
 
 //Проверка наличия элемента в массиве
-
 bool Contains(double[] array, double number)
 {
     for (int i = 0; i < array.Length; i++)
@@ -153,26 +150,23 @@ Console.WriteLine($"Минимум: {Min(array)}");
 Console.WriteLine($"Максимум: {Max(array)}");
 Console.WriteLine($"Поиск суммы элементов массива: {Sum(array)}");
 Console.WriteLine($"Поиск произведения элементов массива: {Prod(array)}");
+
 Console.WriteLine("Введите число для поиска в массиве: ");
-double number = double.Parse(Console.ReadLine()?? "0");
+double number = double.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Поиск индекса заданного элемента в массиве: {Find(array, number)}");
 
 Console.WriteLine("Введите число для проверки на наличие в массиве: ");
-number = double.Parse(Console.ReadLine()?? "0");
+number = double.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($"Проверка наличия элемента в массиве: {Contains(array, number)}");
 
 Console.WriteLine($"Среднее арифметическое элеметов массива: {Average(array)}");
-
 Console.WriteLine($"Подсчёт количества отрицательных элементов массива: {NegativeCount(array)}");
 
-Console.WriteLine($"Подсчёт количества положительных элементов в массиве: {PositiveCount(array)}");
-
 Console.WriteLine("Введите число для подсчета элементов в массиве: ");
-number = double.Parse(Console.ReadLine()?? "0");
+number = double.Parse(Console.ReadLine() ?? "0");
 Console.WriteLine($" Подсчёт количества вхождений элемента в массив: {Count(array, number)}");
 
 Console.WriteLine($"Подсчёт количества чётных элементов в массив: {EvenCount(array)}");
-
+Console.WriteLine($"Подсчёт количества положительных элементов в массиве: {PositiveCount(array)}");
 Console.WriteLine($"Подсчёт количества нечётных элементов в массив: {UnevenCount(array)}");
-
 Console.WriteLine($"Проверка является ли массив отсортированным по возрастанию: {IsSorted(array)}");
