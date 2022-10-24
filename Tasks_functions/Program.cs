@@ -152,7 +152,34 @@ double Pow(double number, int power)
         res *= number;
     return res;
 }
+//Функцию, которая вычисляет факториал числа n.
+int Factorial(int number)
+{
+    if (number != 0)
+        return number * Factorial(number - 1);
+    else
+        return 1;
+}
 
+//Функцию, которая вычисляет сумму цифр произвольного целого числа n.
+int SumOfDigits(int number)
+{
+    int res = 0;
+    foreach (char digit in number.ToString().ToCharArray())
+        res += int.Parse(digit.ToString());
+    return res;
+}
+
+// Функцию, которая проверяет является ли заданное число n полиндромом.
+bool IsPolindrom(int number)
+{
+    bool res = true;
+    char[] digits = number.ToString().ToCharArray();
+    for (int i = 0; i <= digits.Length / 2; i++)
+        if (digits[i] != digits[digits.Length - 1 - i])
+            res = false;
+    return res;
+}
 
 
 
