@@ -99,6 +99,50 @@ int PositiveCount(double[] array)
     return res;
 }
 
+//Подсчёт количества вхождений элемента в массив
+
+int Count(double[] array, double number)
+{
+    int res = 0;
+    foreach (double num in array)
+        if (num == number)
+            res++;
+    return res;
+}
+
+//Подсчёт количества чётных элементов в массив
+int EvenCount(double[] array)
+{
+    int res = 0;
+    foreach (double num in array)
+        if (num % 2 == 0)
+            res++;
+    return res;
+}
+
+//Подсчёт количества нечётных элементов в массив
+int UnevenCount(double[] array)
+{
+    int res = 0;
+    foreach (double num in array)
+        if (num % 2 == 1)
+            res++;
+    return res;
+}
+
+//Проверка является ли массив отсортированным по возрастанию. Если массив отсортирован, то возвращать true, иначе - false.
+bool IsSorted(double[] array)
+{
+    double number = 0.0;
+    foreach (double num in array)
+    {
+        if (num < number)
+            return false;
+        number = num;
+    }
+    return true;
+}
+
 
 //III. Вызвать и проверить работу всех вышеуказанных фукнций:
 
@@ -122,3 +166,13 @@ Console.WriteLine($"Среднее арифметическое элеметов
 Console.WriteLine($"Подсчёт количества отрицательных элементов массива: {NegativeCount(array)}");
 
 Console.WriteLine($"Подсчёт количества положительных элементов в массиве: {PositiveCount(array)}");
+
+Console.WriteLine("Введите число для подсчета элементов в массиве: ");
+number = double.Parse(Console.ReadLine()?? "0");
+Console.WriteLine($" Подсчёт количества вхождений элемента в массив: {Count(array, number)}");
+
+Console.WriteLine($"Подсчёт количества чётных элементов в массив: {EvenCount(array)}");
+
+Console.WriteLine($"Подсчёт количества нечётных элементов в массив: {UnevenCount(array)}");
+
+Console.WriteLine($"Проверка является ли массив отсортированным по возрастанию: {IsSorted(array)}");
