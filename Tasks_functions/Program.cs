@@ -181,6 +181,28 @@ bool IsPolindrom(int number)
     return res;
 }
 
+//Функцию, складывающую два целых числа.
+
+int SumOfTwo(int first, int second)
+{
+    return first + second;
+}
+
+//Функцию, определяющую является ли число простым, то есть возвращающую true, если число простое, иначе - false.
+bool IsSimple(int number)
+{
+    bool res = true;
+    for (int i = 2; i <= number / 2; i++)
+        if ((double)number / i == number / i)
+            res = false;
+    return res;
+}
+//Функцию, определяющую является ли число чётным, то есть возвращающую true, если число чётное, иначе - false.
+bool IsEven(int number)
+{
+    return number % 2 == 0;
+}
+
 
 
 //III. Вызвать и проверить работу всех вышеуказанных фукнций:
@@ -232,3 +254,17 @@ Console.WriteLine($"Сумма цифр числа {num}: {SumOfDigits(num)}");
 Console.WriteLine("Введите число для проверки на полиндромность: ");
 num = int.Parse(Console.ReadLine()?? "0");
 Console.WriteLine($"Является ли число {num} полиндромом: {IsPolindrom(num)}");
+
+Console.WriteLine("Введите первое число для сложения: ");
+num = int.Parse(Console.ReadLine()?? "0");
+Console.WriteLine("Введите второе число для сложения: ");
+int sec = int.Parse(Console.ReadLine()?? "0");
+Console.WriteLine($"Сумма чисел {num} и {sec}: {SumOfTwo(num, sec)}");
+
+Console.WriteLine("Введите число для проверки на простоту: ");
+num = int.Parse(Console.ReadLine()?? "0");
+Console.WriteLine($"Является ли число {num} простым: {IsSimple(num)}");
+
+Console.WriteLine("Введите число для проверки на четность: ");
+num = int.Parse(Console.ReadLine()?? "0");
+Console.WriteLine($"Является ли число {num} четным: {IsEven(num)}");
