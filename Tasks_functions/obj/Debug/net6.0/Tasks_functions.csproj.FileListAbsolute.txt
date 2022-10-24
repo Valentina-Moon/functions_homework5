@@ -3,3 +3,13 @@ C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\Tasks
 C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\Tasks_functions.AssemblyInfoInputs.cache
 C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\Tasks_functions.AssemblyInfo.cs
 C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\Tasks_functions.csproj.CoreCompileInputs.cache
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\bin\Debug\net6.0\Tasks_functions.exe
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\bin\Debug\net6.0\Tasks_functions.deps.json
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\bin\Debug\net6.0\Tasks_functions.runtimeconfig.json
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\bin\Debug\net6.0\Tasks_functions.dll
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\bin\Debug\net6.0\Tasks_functions.pdb
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\Tasks_functions.dll
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\refint\Tasks_functions.dll
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\Tasks_functions.pdb
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\Tasks_functions.genruntimeconfig.cache
+C:\Users\Tseh\Desktop\functions_homework5\Tasks_functions\obj\Debug\net6.0\ref\Tasks_functions.dll
